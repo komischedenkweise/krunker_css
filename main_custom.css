@@ -9,7 +9,7 @@
 
 /* Hide Main Screen */
 
-#mainLogo,#tlInfHold,#newsHolder,.headerBarRight,#aHolder,#termsInfo,#voiceDisplay,#seasonLabel,#instructions {
+#mainLogo,#tlInfHold,#newsHolder,.headerBarRight,#aHolder,#termsInfo,#voiceDisplay,#seasonLabel,#instructions,#mapInfoHolder {
     display:none !important;
 }
 
@@ -272,7 +272,8 @@
 	position: fixed;
 	background-color: transparent !important;
 	margin-top: -1%;
-	margin-left: 46.3%
+	margin-left: 46.3%;
+    
 }
 
 #pingIcon {
@@ -302,13 +303,6 @@
 /* KDA */
 
 
-#streakCount {
-    position: fixed;
-    left: 50%;
-    bottom: 6%;
-    background-color: #3c3b3b00;
-    transform: translate(-50%);
-}
 
 .countIcon {
     background-color: transparent;
@@ -317,15 +311,14 @@
     font-size: 32px;
 }
 
-#killsIcon, #deathsIcon, #streakIcon, #kdIcon {
+#killsIcon, #streakIcon {
     width: 28px;
     height: 28px;
 }
 
-#killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
-    color: #fff;
+#deathsVal,#deathsIcon {
+    display:none;
 }
-
 
 /* etc */
 
@@ -337,3 +330,15 @@
     border:none;
     font-size: 19px;
 }
+
+#menuWindow.dark {
+    background-color: rgb(117 117 117);
+    border-radius: 25px;
+}
+
+#uiBase.onMenu #spectButton {
+    top: 1px;
+    left: 96.5%;
+    bottom: -18%;
+}
+
